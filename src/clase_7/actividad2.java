@@ -16,13 +16,8 @@ public class actividad2 {
         int V = graph.length;
         floyd.floydWarshall(graph, V);
 
-        // Ejemplo de cómo obtener el camino más corto entre dos nodos
-        System.out.println("Inserte un nodo de inicio: ");
-        Scanner entrada = new Scanner(System.in);
-        int desde = entrada.nextInt();
-        System.out.println("Inserte un nodo hasta el que quiera llegar: ");
-        entrada = new Scanner(System.in);
-        int hasta = entrada.nextInt();
+        int desde = 0;
+        int hasta = 2;
 
         floyd.imprimirCamino(desde, hasta, graph);
     }
